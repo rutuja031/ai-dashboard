@@ -17,17 +17,14 @@ COPY working_req.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r working_req.txt
 
-# Copy project files (everything including check/ and dashboard/)
-COPY . .
+# Copy dashboard app files
+COPY dashboard/ ./
 
-# Set working directory to your app folder
-WORKDIR /app/ai-dashboard/dashboard
+# # Set working directory to your app folder
+# WORKDIR /app/ai-dashboard/dashboard
 
 # Expose port for Cloud Run
 EXPOSE 8501
-
-# Run Streamlit app (update homepage.py if your entrypoint file is different)
-#CMD ["streamlit", "run", "homepage.py", "--server.port=8501", "--server.address=0.0.0.0"]
 
 # Use shell form CMD so $PORT is expanded at runtime
 CMD streamlit run homepage.py --server.port=$PORT --server.address=0.0.0.0
