@@ -12,16 +12,13 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copy requirements file
-COPY working_req.txt .
+COPY working_req.txt ./
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r working_req.txt
 
-# Copy dashboard app files
-COPY dashboard/ ./
-
-# # Set working directory to your app folder
-# WORKDIR /app/ai-dashboard/dashboard
+# Copy app files
+COPY . .
 
 # Expose port for Cloud Run
 EXPOSE 8501
