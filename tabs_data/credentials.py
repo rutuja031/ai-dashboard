@@ -7,7 +7,7 @@ def cred():
         'user': 'postgres',
         'password': 'Strateena@check',
         # 'host': '34.93.35.170',
-        'host': '117.149.7.0',
+        'host': '117.149.7.3',
         'port': 5432
     }
     
@@ -29,7 +29,7 @@ DB_CONFIG = {
     'user': 'postgres',
     'password': 'Strateena@check',
     # 'host': '34.93.35.170',
-    'host': '117.149.7.0',
+    'host': '117.149.7.3',
     'port': 5432
 }
 
