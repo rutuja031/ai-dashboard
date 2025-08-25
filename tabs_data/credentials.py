@@ -7,7 +7,7 @@ def cred():
         'user': 'postgres',
         'password': 'Strateena@check',
         # 'host': '34.93.35.170',
-        'host': '117.149.7.0',
+        'host': '118.150.8.0',
         'port': 5432
     }
     
@@ -25,13 +25,13 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 
 DB_CONFIG = {
-    'dbname': 'new_db',
-    'user': 'postgres',
-    'password': 'Strateena@check',
-    # 'host': '34.93.35.170',
-    'host': '117.149.7.0',
-    'port': 5432
-}
+        'dbname': 'new_db',
+        'user': 'postgres',
+        'password': 'Strateena@check',
+        # 'host': '34.93.35.170',
+        'host': '118.150.8.0',
+        'port': 5432
+    }
 
 def db_query(query):
     conn = None
