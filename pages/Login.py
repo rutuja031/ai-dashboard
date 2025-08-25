@@ -7,7 +7,7 @@ from components.styles import apply_global_styles  # type: ignore
 apply_global_styles()
 show_header()
 
-st.set_page_config(layout="wide")
+# st.set_page_config(layout="wide")
 
 # Load credentials from DB
 credentials = user_check()
