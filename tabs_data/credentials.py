@@ -6,10 +6,10 @@ def cred():
         'dbname': 'new_db',
         'user': 'postgres',
         'password': 'Strateena@check',
-        # 'host': '34.93.35.170',
+        'host': '34.93.35.170',
         #'host': '118.150.8.0',
         # 'host': '117.149.7.3',
-        'host': '/cloudsql/aiml-ho-arg:asia-south1:newdb-demo1234',
+        #'host': '/cloudsql/aiml-ho-arg:asia-south1:newdb-demo1234',
         'port': 5432
     }
     
@@ -30,10 +30,10 @@ DB_CONFIG = {
         'dbname': 'new_db',
         'user': 'postgres',
         'password': 'Strateena@check',
-        # 'host': '34.93.35.170',
+        'host': '34.93.35.170',
         # 'host': '118.150.8.0',
         # 'host': '117.149.7.3',
-        'host': '/cloudsql/aiml-ho-arg:asia-south1:newdb-demo1234',
+        # 'host': '/cloudsql/aiml-ho-arg:asia-south1:newdb-demo1234',
         'port': 5432
     }
 
