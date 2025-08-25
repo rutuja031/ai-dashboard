@@ -20,39 +20,6 @@ def cred():
         
     return get_engine()
 
-# from google.cloud.sql.connector import Connector
-# import sqlalchemy
-
-# def cred():
-#     # Initialize the Cloud SQL connector
-#     connector = Connector()
-
-#     # Define connection parameters
-#     DB_CONFIG = {
-#         'instance_connection_name': 'aiml-ho-arg:asia-south1:newdb-demo1234', 
-#         'dbname': 'new_db',
-#         'user': 'postgres',
-#         'password': 'Strateena@check'
-#     }
-
-#     # Function to create a secure connection
-#     def getconn():
-#         return connector.connect(
-#             DB_CONFIG['instance_connection_name'],
-#             "pg8000",
-#             user=DB_CONFIG['user'],
-#             password=DB_CONFIG['password'],
-#             db=DB_CONFIG['dbname']
-#         )
-
-#     # Create SQLAlchemy engine using the connector
-#     engine = sqlalchemy.create_engine(
-#         "postgresql+pg8000://",
-#         creator=getconn,
-#     )
-
-#     return engine
-
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
